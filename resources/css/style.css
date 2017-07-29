@@ -1,0 +1,263 @@
+html {
+  font-size: 18px;
+}
+
+body {
+  font-family: Helvetica, sans-serif;
+  line-height: 1.4em;
+}
+
+header {
+  height: 30rem;
+  width: 100%;
+  background: url('../images/glasses-bg.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 1rem;
+}
+
+.top-header {
+  width: 960px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  background-color: cadetblue;
+  color: white;
+}
+
+.top-header-logo {
+  display: flex;
+  align-items: center;
+}
+
+.nav-main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-main span {
+  margin: 1rem;
+}
+
+.nav-mobile {
+  display: none;
+}
+
+.logo-white {
+  height: 1.5rem;
+  margin: 1rem 1rem 1rem 2rem;
+}
+
+.flex-container {
+  margin: 0 auto;
+  width: 960px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.present-header {
+  background-color: white;
+  margin: 10rem -2rem 0 0;
+}
+
+.present-header h1 {
+  padding: 1.5rem 5rem;
+  font-weight: bold;
+  font-size: 2rem;
+  line-height: 1.2rem;
+}
+
+.facilities {
+  width: 960px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.facility {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  margin: 3rem;
+  width: 5rem;
+  height: 8rem;
+}
+
+.paper-icon {
+  width: 3.5rem;
+}
+
+.ruler-icon {
+  width: 5rem;
+}
+
+.truck-icon {
+  width: 5rem;
+}
+
+.information {
+  width: 960px;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  padding-bottom: 5rem;
+}
+
+.information-item {
+  width: 35%;
+  margin-left: 5%;
+}
+
+.title {
+  background-color: cadetblue;
+  font-weight: bold;
+  padding: 0.5rem 1.25rem;
+  color: white;
+  max-width: 10rem;
+}
+
+.text {
+  margin-top: 1rem;
+}
+
+footer {
+  width: 960px;
+  background-color: azure;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.logo-black {
+  height: 1.5rem;
+  margin: 4rem 1rem 4rem 4rem;
+}
+
+/* tablet landscape */
+
+@media only screen and (max-width: 1024px) {
+  header {
+    height: 22rem;
+    padding-top: 0;
+  }
+
+  .top-header {
+    width: 100%;
+  }
+
+  .present-header {
+    margin: 5rem 2rem 0 0;
+  }
+
+  .present-header h1 {
+    padding: 0.75rem 4rem;
+    font-size: 1.33rem;
+  }
+}
+
+/* tablet */
+
+@media only screen and (max-width: 768px) {
+  header {
+    width: 100%;
+  }
+
+  .facilities {
+    width: 100%;
+  }
+
+  .information {
+    width: 100%;
+  }
+
+  footer {
+    width: 100%;
+  }
+
+  .nav-main {
+    display: none;
+  }
+
+  .nav-mobile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .nav-mobile span {
+    margin: 1rem;
+  }
+}
+
+/* mobile */
+
+@media only screen and (max-width: 480px) {
+  header {
+    height: 17rem;
+    background-position: 20%;
+  }
+
+  .logo-text {
+    display: none;
+  }
+
+  .flex-container {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .present-header {
+    width: 100%;
+    margin: 9rem 0 0 0;
+    text-align: center;
+  }
+
+  .present-header h1 {
+    padding: 1rem;
+    font-size: 1rem;
+    line-height: 0;
+  }
+
+  .facilities {
+    flex-direction: column;
+    font-size: 0.77rem;
+    margin: 3rem auto;
+  }
+
+  .facility {
+    margin: 0.77rem;
+    height: auto;
+  }
+
+  .facility-description {
+    margin-top: 1rem;
+  }
+
+  .information {
+    flex-direction: column;
+  }
+
+  .information-item {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .appointments {
+    margin-top: 4rem;
+  }
+
+  .title {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .text {
+    padding: 0 0.3rem;
+    font-size: 0.77rem;
+  }
+}
