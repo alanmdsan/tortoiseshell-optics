@@ -260,4 +260,12 @@ footer {
     padding: 0 0.3rem;
     font-size: 0.77rem;
   }
+
+  .logo-black {
+    margin: 4rem auto;
+  }
+
+  .copyright {
+    display: none;
+  }
 }
